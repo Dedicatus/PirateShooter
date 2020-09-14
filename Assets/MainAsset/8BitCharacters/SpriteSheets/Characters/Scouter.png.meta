@@ -50,6 +50,9 @@ TextureImporter:
   - first:
       213: 21300030
     second: Scouter_Shoot2
+  - first:
+      213: -784902290976391033
+    second: Scouter_Fainted
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -466,6 +469,27 @@ TextureImporter:
       bones: []
       spriteID: e3305410000000000800000000000000
       internalID: 21300030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scouter_Fainted
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 17
+        width: 18
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78046f266877b15f0800000000000000
+      internalID: -784902290976391033
       vertices: []
       indices: 
       edges: []

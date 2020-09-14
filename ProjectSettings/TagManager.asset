@@ -8,6 +8,8 @@ TagManager:
   - AttackingTeam
   - Feet
   - Enemy
+  - EnemyHead
+  - Wall
   layers:
   - Default
   - TransparentFX

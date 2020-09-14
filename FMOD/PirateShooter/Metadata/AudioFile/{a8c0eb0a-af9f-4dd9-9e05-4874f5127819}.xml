@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="AudioFile" id="{a8c0eb0a-af9f-4dd9-9e05-4874f5127819}">
+		<property name="assetPath">
+			<value>gun_glock_9mm_03.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>1.7182708333333334</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{9f58bb13-ad3d-4562-820e-feb639c54a53}</destination>
+		</relationship>
+	</object>
+</objects>
