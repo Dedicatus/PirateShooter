@@ -2,6 +2,9 @@
 using System.Collections;
 
 public class Player : MonoBehaviour {
+
+	AudioManager m_AudioManager;
+
 	public Transform sprite;
 	// Use this for initialization
 	Animator anim;
@@ -48,6 +51,7 @@ public class Player : MonoBehaviour {
 		anim = GetComponent<Animator>();
 		m_CameraManager = GameObject.FindWithTag("MainCamera").GetComponent<CameraManager>();
 		m_Rigidbody = this.GetComponent<Rigidbody2D>();
+		m_AudioManager = GameObject.FindWithTag("AudioManager").GetComponent<AudioManager>();
 	}
 	void FixedUpdate(){
 		GroundDetection ();
@@ -128,7 +132,7 @@ public class Player : MonoBehaviour {
 		bulletDown.GetComponent<Bullet>().Damage = bulletDamage;
 		bulletDown.GetComponent<Bullet>().KnockForce = bulletKnockForce;
 
-		FMODUnity.RuntimeManager.PlayOneShot("event:/Gunshot");
+		m_AudioManager.PlayGunshot();
 		Destroy(bulletUp, 0.8f);
 		Destroy(bulletMid, 0.8f);
 		Destroy(bulletDown, 0.8f);
@@ -138,7 +142,7 @@ public class Player : MonoBehaviour {
 		GameObject muzzleFlash = Instantiate(muzzleFlashObject, gunPoint.transform.position, gunPoint.transform.rotation, transform) as GameObject;
 		Destroy(muzzleFlash, 0.1f);
 
-		StartCoroutine(m_CameraManager.Shake(0.15f, 0.05f));
+		StartCoroutine(m_CameraManager.Shake(0.15f, 0.05f, Movement.facingRight));
 
 		if (Movement.facingRight)
         {

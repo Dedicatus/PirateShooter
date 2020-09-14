@@ -2,6 +2,7 @@
 using System.Collections;
 
 public class Movement : MonoBehaviour{
+	AudioManager m_AudioManager;
 	public bool canDoubleJump = false;
 	public static bool facingRight = true;
 
@@ -11,19 +12,28 @@ public class Movement : MonoBehaviour{
 	public KeyCode leftKey = KeyCode.A;
 	public KeyCode rightKey = KeyCode.D;
 	public static float timer = 5.0f;
-	public void Motion (float speed, float jump, Rigidbody2D rdbdy, bool grounded, bool isScout,bool isShooting, Transform sprite){
+
+    void Start()
+    {
+		m_AudioManager = GameObject.FindWithTag("AudioManager").GetComponent<AudioManager>();
+	}
+    public void Motion (float speed, float jump, Rigidbody2D rdbdy, bool grounded, bool isScout,bool isShooting, Transform sprite){
 		if (Input.GetKeyDown (jumpKey)) {
 			if(grounded){
 			rdbdy.velocity = new Vector2 ( rdbdy.velocity.x, jump);
+				m_AudioManager = GameObject.FindWithTag("AudioManager").GetComponent<AudioManager>();
+				m_AudioManager.PlayJump();
 			}
 
 			if (grounded && isScout) {
 				rdbdy.velocity = new Vector2 (rdbdy.velocity.x, jump);
+				m_AudioManager.PlayJump();
 				canDoubleJump = true;
 			} else {
 				if(canDoubleJump){
 					canDoubleJump = false;
-					rdbdy.velocity = new Vector2 (rdbdy.velocity.x, (jump - 1));
+					m_AudioManager.PlayJump();
+					rdbdy.velocity = new Vector2 (rdbdy.velocity.x, (jump - 0.6f));
 				}
 			
 			}

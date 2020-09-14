@@ -7,6 +7,8 @@ public class CameraManager : MonoBehaviour
     GameObject target;
 
     [SerializeField] float smoothSpeed = 0.125f;
+    [SerializeField] float shakeRange = 1.0f;
+    [SerializeField] float kickDistance = 2.0f;
     [SerializeField] Vector3 Offset;
 
     bool isShaking;
@@ -37,17 +39,18 @@ public class CameraManager : MonoBehaviour
         transform.position = smoothedPosition;
     }
 
-    public IEnumerator Shake(float duration, float magnitude)
+    public IEnumerator Shake(float duration, float magnitude, bool faceRight)
     {
-
         float elapsed = 0f;
 
         while (elapsed < duration)
         {
             isShaking = true;
 
-            float x = Random.Range(-1f, 1f) * magnitude;
-            float y = Random.Range(-1f, 1f) * magnitude;
+            float x = Random.Range(-shakeRange, shakeRange) * magnitude;
+            float y = Random.Range(-shakeRange, shakeRange) * magnitude;
+
+            x += faceRight ? -kickDistance : kickDistance;
 
             shakeOffset = new Vector3(x, y, 0f);
 

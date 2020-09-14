@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="AudioFile" id="{6fa19db4-ca3a-4b60-b61e-3ff0e9773697}">
+		<property name="assetPath">
+			<value>341246__sharesynth__jump02.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>0.27219954648526079</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{9f58bb13-ad3d-4562-820e-feb639c54a53}</destination>
+		</relationship>
+	</object>
+</objects>

@@ -24,7 +24,7 @@ public class Bullet : MonoBehaviour
     {
         if (other.tag == "Enemy")
         {
-            other.GetComponent<Enemy>().TakeDamage(damage, this.GetComponent<Rigidbody2D>().velocity.x > 0 ? knockForce : -knockForce);
+            other.GetComponent<Enemy>().TakeDamage(damage, this.GetComponent<Rigidbody2D>().velocity.x > 0 ? knockForce : -knockForce, true);
             GameObject impactFlash = Instantiate(impactFlashObject, this.transform.position, this.transform.rotation, other.transform) as GameObject;
 
 

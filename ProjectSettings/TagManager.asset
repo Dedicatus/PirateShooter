@@ -10,6 +10,8 @@ TagManager:
   - Enemy
   - EnemyHead
   - Wall
+  - AudioManager
+  - EnemyWall
   layers:
   - Default
   - TransparentFX

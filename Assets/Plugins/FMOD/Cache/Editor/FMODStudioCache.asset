@@ -14,12 +14,35 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: FMOD/PirateShooter/Build/Desktop/Master.strings.bank
   SubDir: 
-  lastModified: 637355859373072139
+  lastModified: 637356538733121089
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 732
+    Value: 866
   Exists: 1
+--- !u!114 &-6365590586511570994
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Jump
+  m_EditorClassIdentifier: 
+  Path: event:/Jump
+  guid: 2f23a3114070a747a913a5fbd213d59d
+  Banks:
+  - {fileID: -3290078438828302698}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 200
 --- !u!114 &-6088509484474061662
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -55,7 +78,7 @@ MonoBehaviour:
   lastModified: 637355859372992356
   LoadResult: 0
   FileSizes: []
-  Exists: 1
+  Exists: 0
 --- !u!114 &-4064533525032828764
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -89,7 +112,7 @@ MonoBehaviour:
   Path: event:/Gunshot
   guid: 570ffdd3b220b4499e75ae5a2973c849
   Banks:
-  - {fileID: -4073051839934219097}
+  - {fileID: -3290078438828302698}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -97,6 +120,105 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 635
+--- !u!114 &-3290078438828302698
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/PirateShooter/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637356538733071214
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
+--- !u!114 &-3001744019967308206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/EnemyFaint
+  m_EditorClassIdentifier: 
+  Path: event:/EnemyFaint
+  guid: fddb46486fe5d54cb339e15bebefbae9
+  Banks: []
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 800
+--- !u!114 &-1107915606275525036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/PirateShooter/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637356515941705470
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &-870982864648905967
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/PirateShooter/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637356515558128287
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &-631632610494516888
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Explose
+  m_EditorClassIdentifier: 
+  Path: event:/Explose
+  guid: 0748430218a4dc4697db034def4d9385
+  Banks:
+  - {fileID: -3290078438828302698}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 800
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -111,16 +233,37 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EditorBanks:
   - {fileID: -8906775767723873930}
-  - {fileID: -4073051839934219097}
+  - {fileID: -3290078438828302698}
   EditorEvents:
   - {fileID: -3829909718556261921}
+  - {fileID: -631632610494516888}
+  - {fileID: -6365590586511570994}
+  - {fileID: 3079129896263064469}
   EditorParameters: []
   MasterBanks:
-  - {fileID: -4073051839934219097}
+  - {fileID: -3290078438828302698}
   StringsBanks:
   - {fileID: -8906775767723873930}
-  stringsBankWriteTime: 637355859373072139
+  stringsBankWriteTime: 637356538733121089
   cacheVersion: 3
+--- !u!114 &716900617597857181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/PirateShooter/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637356538473926684
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
 --- !u!114 &777294423158141420
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -175,6 +318,101 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &3079129896263064469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/JumpOnEnemy
+  m_EditorClassIdentifier: 
+  Path: event:/JumpOnEnemy
+  guid: fddb46486fe5d54cb339e15bebefbae9
+  Banks:
+  - {fileID: -3290078438828302698}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 800
+--- !u!114 &3634078991026602046
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/PirateShooter/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637356527526400830
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &4028332263896565120
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/PirateShooter/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637356516135900910
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &4933040455394387904
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/PirateShooter/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637356515776030911
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &5865775808316876910
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/PirateShooter/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637356534752748903
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
 --- !u!114 &6097075911174592491
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -208,6 +446,24 @@ MonoBehaviour:
   Path: FMOD/PirateShooter/Build/Desktop/Master.bank
   SubDir: 
   lastModified: 637355516745695242
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &6718097542803006732
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/PirateShooter/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637356538205598544
   LoadResult: 0
   FileSizes: []
   Exists: 0
